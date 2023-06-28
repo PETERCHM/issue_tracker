@@ -1,0 +1,9 @@
+{% for comment in comments %}
+  <div class="comment">
+    <p>{{ comment.content }}</p>
+    <p>By: {{ comment.author }}</p>
+    <!-- Display other comment fields as needed -->
+  </div>
+{% empty %}
+  <p>No comments found.</p>
+{% endfor %}

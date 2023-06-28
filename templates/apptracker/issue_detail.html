@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Issue Details</h1>
+  <h2>{{ issue.title }}</h2>
+  <p>{{ issue.description }}</p>
+  <p>Status: {{ issue.status }}</p>
+  <hr>
+
+<h2>Comments</h2>
+{% include 'apptracker/comments.html' %}
+
+{% endblock %}
